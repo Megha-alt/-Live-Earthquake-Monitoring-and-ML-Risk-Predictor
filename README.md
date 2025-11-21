@@ -26,6 +26,21 @@ A risk-rate trend graph
 This helps in understanding how risky the current seismic environment is in real time.
 
 
+# 🎯 Purpose
+
+To create a simple machine learning system that can:
+
+Analyze recent real earthquake activity
+
+Predict the current risk level
+
+Detect sudden seismic spikes
+
+Visualize patterns to improve understanding
+
+Make seismic monitoring more accessible and interpretable
+
+
 #  Key Features
 
 Live Seismic Data Monitoring
@@ -54,16 +69,19 @@ Matplotlib (for visualizations)
 
 Live Earthquake Dataset API / Recent CSV Feed (whichever you used)
 
+ 
+# 📊 Outputs
+
+Live Predicted Risk Score
+
+Spike / Normal Detection
+
+Recent Risk Trend Graph
+
+Magnitude Influence Pattern
+
+These visuals help in quickly understanding live seismic conditions.
 
 
-#  Workflowm 
-
-Fetch live recent earthquake data (magnitude, depth, etc.)
-
-Clean and preprocess the incoming seismic values
-
-Use RandomForestRegressor to predict a risk score
-
-Compare the result with recent values to detect spikes
 
 
