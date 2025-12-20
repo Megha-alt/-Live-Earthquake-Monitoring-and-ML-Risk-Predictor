@@ -1,10 +1,11 @@
-🌍 Seismo — Earthquake Area Analysis and Risk Classification
-📌 Project Overview
+# 🌍Seismo — Earthquake Area Analysis and Risk Classification
+
+# 📌 Project Overview
 Seismo is a machine learning–based project that analyzes earthquake data to classify seismic events into risk categories based on their magnitude and related features.
 The project uses a Random Forest Classifier combined with a machine learning pipeline to ensure structured preprocessing, consistent training, and reliable evaluation.
 The primary goal of Seismo is to analyze earthquake activity across different areas and time windows, visualize seismic behavior, and classify events into risk levels in a clear and explainable manner.
 
-🎯 Objectives
+# 🎯 Objectives
 
 Analyze earthquake data based on time and area
 Classify earthquakes into risk categories
@@ -12,7 +13,7 @@ Build a robust ML workflow using a pipeline
 Evaluate model performance using accuracy and classification metrics
 Visualize recent seismic activity for better understanding
 
-🧠 Problem Statement
+# 🧠 Problem Statement
 
 Earthquake datasets often contain large volumes of historical data but limited events within short time windows.
 Manual analysis becomes inefficient when identifying risk-prone seismic events across regions.
@@ -27,25 +28,25 @@ Geographical area / location
 Additional numerical features used for classification
 Data is filtered into specific time windows ( last 24 hours) for focused analysis.
 
-⚙️ Methodology
+# ⚙️ Methodology
 
-# Data Preprocessing
+--> Data Preprocessing
 Handle missing values
 Convert time features into usable formats
 Select relevant numerical features
 
-# Pipeline Construction
+--> Pipeline Construction
 Feature scaling 
 Random Forest Classifier integrated into a pipeline
 
-# Model Training
+--> Model Training
 Train the model on labeled earthquake data
 Use consistent preprocessing through the pipeline
 
-# Evaluation
+--> Evaluation
 Evaluate performance using accuracy, confusion matrix, and classification report
 
-# Visualization
+--> Visualization
 
 Plot earthquake magnitudes over time
 Relationship Between Depth and Magnitude (Scatter Plot)
@@ -60,7 +61,7 @@ Low Risk
 High Risk
 
 
-📌 Conclusion
+# 📌 Conclusion
 
 This project successfully demonstrates the use of data analysis and machine learning techniques to study earthquake activity and classify seismic events into risk categories. Using a structured methodology and a Random Forest model with a pipeline, the system effectively analyzes earthquake magnitudes and related features.
 The model achieved high classification accuracy on the available dataset, indicating correct learning of patterns present in historical data. However, the results also highlight the importance of data distribution and availability, as performance is influenced by the quality and balance of the dataset.
