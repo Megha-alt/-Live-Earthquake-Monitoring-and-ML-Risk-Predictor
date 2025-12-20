@@ -1,87 +1,68 @@
-# -Live-Earthquake-Monitoring-and-ML-Risk-Predictor
-A Machine Learning model using RandomForestRegressor to analyze live recent earthquake data, detect risk spikes, and predict risk scores.
-This project focuses on monitoring recent real-time earthquake activity and estimating the risk level based on seismic parameters.
-Using live earthquake data, the model analyzes magnitude and depth, detects whether activity is normal or spiked, and predicts a continuous risk score.
-It also visualizes risk trends and magnitude–risk patterns to make seismic behavior easy to understand.
+🌍 Seismo — Earthquake Area Analysis and Risk Classification
+📌 Project Overview
+Seismo is a machine learning–based project that analyzes earthquake data to classify seismic events into risk categories based on their magnitude and related features.
+The project uses a Random Forest Classifier combined with a machine learning pipeline to ensure structured preprocessing, consistent training, and reliable evaluation.
+The primary goal of Seismo is to analyze earthquake activity across different areas and time windows, visualize seismic behavior, and classify events into risk levels in a clear and explainable manner.
 
-# 🔎 Project Summary
+🎯 Objectives
 
-The purpose of this project is to track recent live seismic readings and interpret the risk associated with them.
-The model uses:
+Analyze earthquake data based on time and area
+Classify earthquakes into risk categories
+Build a robust ML workflow using a pipeline
+Evaluate model performance using accuracy and classification metrics
+Visualize recent seismic activity for better understanding
 
-Live magnitude data
+🧠 Problem Statement
 
-Live depth readings
+Earthquake datasets often contain large volumes of historical data but limited events within short time windows.
+Manual analysis becomes inefficient when identifying risk-prone seismic events across regions.
 
-Recent seismic fluctuations
+This project aims to automate earthquake risk classification using a machine learning model while maintaining interpretability and reliability.
 
-- Based on this, the system generates:
+📊 Dataset Description
+The dataset consists of historical earthquake records with the following attributes:
+Time of occurrence
+Magnitude
+Geographical area / location
+Additional numerical features used for classification
+Data is filtered into specific time windows ( last 24 hours) for focused analysis.
 
-A risk score
+⚙️ Methodology
 
-Spike vs Normal activity status
+# Data Preprocessing
+Handle missing values
+Convert time features into usable formats
+Select relevant numerical features
 
-A risk-rate trend graph
+# Pipeline Construction
+Feature scaling 
+Random Forest Classifier integrated into a pipeline
 
-This helps in understanding how risky the current seismic environment is in real time.
+# Model Training
+Train the model on labeled earthquake data
+Use consistent preprocessing through the pipeline
 
+# Evaluation
+Evaluate performance using accuracy, confusion matrix, and classification report
 
-# 🎯 Purpose
+# Visualization
 
-To create a simple machine learning system that can:
+Plot earthquake magnitudes over time
+Relationship Between Depth and Magnitude (Scatter Plot)
+Magnitude Distribution (Box Plot – Last 24 Hours)
+Earthquake Events Scatter Plot (Last 24 Hours)
 
-Analyze recent real earthquake activity
-
-Predict the current risk level
-
-Detect sudden seismic spikes
-
-Visualize patterns to improve understanding
-
-Make seismic monitoring more accessible and interpretable
-
-
-#  Key Features
-
-Live Seismic Data Monitoring
-
-Risk Score Prediction using RandomForestRegressor
-
-Spike Detection for abnormal seismic rises
-
-Risk Trend Visualization for recent activity
-
-Magnitude–Risk Pattern Analysis to explain behavior
-
-Clean and simple ML pipeline
-
-
-
-#  Technologies Used
-
-Python
-
-RandomForestRegressor (Scikit-Learn)
-
-Pandas & NumPy
-
-Matplotlib (for visualizations)
-
-Live Earthquake Dataset API / Recent CSV Feed (whichever you used)
-
- 
-# 📊 Outputs
-
-Live Predicted Risk Score
-
-Spike / Normal Detection
-
-Recent Risk Trend Graph
-
-Magnitude Influence Pattern
-
-These visuals help in quickly understanding live seismic conditions.
+# 📊 Accuracy Achieved:
+Accuracy = 99.91%
+Total samples = 3238
+Classes:
+Low Risk
+High Risk
 
 
+📌 Conclusion
 
+This project successfully demonstrates the use of data analysis and machine learning techniques to study earthquake activity and classify seismic events into risk categories. Using a structured methodology and a Random Forest model with a pipeline, the system effectively analyzes earthquake magnitudes and related features.
+The model achieved high classification accuracy on the available dataset, indicating correct learning of patterns present in historical data. However, the results also highlight the importance of data distribution and availability, as performance is influenced by the quality and balance of the dataset.
+Overall, the project emphasizes responsible analysis by combining visualization, model evaluation, and clear interpretation of results. While the current implementation focuses on classification rather than real-time prediction, it provides a strong foundation for future enhancements using larger datasets and advanced techniques.
 
