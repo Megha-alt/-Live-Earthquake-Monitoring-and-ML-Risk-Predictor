@@ -30,28 +30,32 @@ Data is filtered into specific time windows ( last 24 hours) for focused analysi
 
 # ⚙️ Methodology
 
---> Data Preprocessing
-Handle missing values
-Convert time features into usable formats
+--> Data Preprocessing:
+
+Handle missing values,
+Convert time features into usable formats,
 Select relevant numerical features
 
---> Pipeline Construction
-Feature scaling 
+--> Pipeline Construction:
+
+Feature scaling ,
 Random Forest Classifier integrated into a pipeline
 
---> Model Training
-Train the model on labeled earthquake data
+--> Model Training:
+
+Train the model on labeled earthquake data,
 Use consistent preprocessing through the pipeline
 
---> Evaluation
+--> Evaluation:
+
 Evaluate performance using accuracy, confusion matrix, and classification report
 
---> Visualization
+--> Visualization:
 
-Plot earthquake magnitudes over time
-Relationship Between Depth and Magnitude (Scatter Plot)
-Magnitude Distribution (Box Plot – Last 24 Hours)
-Earthquake Events Scatter Plot (Last 24 Hours)
+Plot earthquake magnitudes over time,
+Relationship Between Depth and Magnitude (Scatter Plot),
+Magnitude Distribution (Box Plot – Last 24 Hours),
+Earthquake Events Scatter Plot (Last 24 Hours),
 
 # 📊 Accuracy Achieved:
 Accuracy = 99.91%
