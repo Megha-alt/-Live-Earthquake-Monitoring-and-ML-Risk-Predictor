@@ -1,4 +1,4 @@
-# 🌍Seismo — Earthquake Area Analysis and Risk Classification
+# 🌍Seismo — Real-Time Earthquake Area Analysis and Risk Classification
 
 # 📌 Project Overview
 Seismo is a machine learning–based project that analyzes earthquake data to classify seismic events into risk categories based on their magnitude and related features.
@@ -59,9 +59,13 @@ Earthquake Events Scatter Plot (Last 24 Hours),
 
 # 📊 Accuracy Achieved:
 Accuracy = 99.91%
+
 Total samples = 3238
+
 Classes:
+
 Low Risk
+
 High Risk
 
 
